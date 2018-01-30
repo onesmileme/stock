@@ -1,4 +1,4 @@
-package com.chunhui.demo;
+package com.chunhui.stock;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
