@@ -14,4 +14,12 @@ public class InfoDao implements Serializable{
     public  String toString(){
         return "code: "+code + "  name: "+name;
     }
+
+    public  String getCode(){
+        return code;
+    }
+    public  String getName(){
+        return name;
+    }
+
 }

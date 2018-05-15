@@ -1,7 +1,7 @@
 package com.chunhui.stock;
 
 import com.chunhui.core.dto.InfoDao;
-import com.chunhui.core.dto.StockBasicDao;
+import com.chunhui.core.dto.StockBasicDto;
 import com.chunhui.core.dto.StockBasicMapper;
 import com.chunhui.core.dto.StockInfoMapper;
 import org.junit.Test;
@@ -32,8 +32,9 @@ public class StockApplicationTests {
     public  void getAllBasicData(){
 
 	    System.out.println("will test");
-        //List<StockBasicDao> allinfos = basicMapper.getAllBasicInfo();
+        List<StockBasicDto> allinfos = basicMapper.getAllBasicInfo();
 
+        //*
         List<InfoDao> allInfos = infoMapper.getAllInfos();
 
         for (InfoDao dao : allInfos){
@@ -41,7 +42,7 @@ public class StockApplicationTests {
         }
 
         System.out.println("all info count is: "+allInfos.size());
-
+        //*/
     }
 
 }

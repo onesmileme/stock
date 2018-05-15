@@ -1,11 +1,13 @@
 package com.chunhui.core.dto;
 
 import lombok.Data;
+import lombok.Getter;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Data
-public class StockBasicDao implements Serializable{
+public class StockBasicDto implements Serializable{
 
     private  String code;
     private  String name;
@@ -17,19 +19,19 @@ public class StockBasicDao implements Serializable{
     private  double liquidAssets; //流动资产
     private  double fixedAssets; //固定资产
     private  double reserved; //公积金
-    private  double reservedPerShare;//每股公积金
+    private  double reservedPerShare; //每股公积金
     private  double esp; //每股收益
-    private  double bvps;//每股净资
-    private  double pb;//市净率
-    private  String timeToMarket;//上市日期
-    private  double undp;//未分利润
-    private  float perundp;//每股未分配
-    private  float rev;//收入同比(%)
-    private  float profit;//利润同比(%)
-    private  float gpr;//毛利率(%)
-    private float npr;//净利润率(%)
-    private float holders;//股东人数
-    private String date;//数据更新日期
+    private  double bvps; //每股净资
+    private  double pb; //市净率
+    private  String timeToMarket; //上市日期
+    private  double undp; //未分利润
+    private  float perundp; //每股未分配
+    private  float rev; //收入同比(%)
+    private  float profit; //利润同比(%)
+    private  float gpr; //毛利率(%)
+    private float npr; //净利润率(%)
+    private float holders; //股东人数
+    private String date; //数据更新日期
 
 }
 /*
